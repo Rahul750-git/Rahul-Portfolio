@@ -20,3 +20,13 @@ tl.from(".cont",{
     scale:0.5,
 
 })
+var cursur = document.querySelector("#cursur");
+cursur.addEventListener("mousemove",function(dets){
+  gsap.to("#cursur",{
+    x:dets.x,
+    y:dets.y,
+    duration:0.5,
+    ease:"back.out(1.7)"
+    
+  })
+})
